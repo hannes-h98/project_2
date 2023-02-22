@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>The Film Quiz</title>
 </head>
+
 <body>
-    
+    <!-- Game Section -->
+    <section class="quiz-game-area">
+        <div class="quiz-header">
+            <h2>Test your film knowledge!</h2>
+        </div>
+        <div class="questions"></div>
+        <div class="choices"></div>
+
+        <button class="next-q">Next Question</button>
+
+    </section>
+
+    <!-- Score Section -->
+    <section class="score-area" class="hide">
+        <div class="complete">
+            <p>Well done! You completed the quiz</p>
+            <span class="final-result"></span>
+        </div>
+        <div class="restart-button">
+            <button class="restart">Try Again!</button>
+        </div>
+
+    </section>
+
+    <!-- Rules Section-->
+    <footer>
+        <div class="rules-box">
+            <h3>Quiz Rules</h3>
+            <ul>
+                <li>There are 4 different questions.</li>
+                <li>You get 100 points per for every right answer.</li>
+                <li>You have to select an answer to get to the next question.</li>
+                <li>You can not go back and change your answer.</li>
+                <li>You can restart the quiz as many times as you want!</li>
+            </ul>
+        </div>
+    </footer>
+
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
