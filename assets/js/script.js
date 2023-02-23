@@ -41,3 +41,12 @@ const QUESTIONS = [
     rightanswer: "c"
 }
 ]
+
+// Get DOM elements by using query selector
+const quizArea = document.queryselector(".quiz-game-area")
+const choices = document.queryselector(".choices")
+const questionElement = document.queryselector(".questions-text")
+const nextQ = document.queryselector(".next-q")
+const ScoreArea = document.queryselector(".score-Area")
+const finalResult = document.queryselector(".final-result")
+const restartBtn = document.queryselector(".restart")
