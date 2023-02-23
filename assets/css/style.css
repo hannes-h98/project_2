@@ -14,17 +14,30 @@ body {
 
 .quiz-game-area {
     position: absolute;
-    background-color: aqua;
-    top: 50%;
+    background-color: #6900ff;
+    top: 30%;
     left: 42%;
     z-index: 1;
+    height: 35vh;
+    border: 2px solid;
+    padding: 3px 3px 3px 3px;
+}
+
+.next-q {
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    margin-bottom: 5px;
+    font-size: 15px;
 }
 
 .score-area {
     position: absolute;
-    background-color: aqua;
-    top: 50%;
+    background-color: #6900ff;
+    top: 40%;
     left: 42%;
+    height: 20vh;
+    border: 2px solid;
 }
 
 footer {
