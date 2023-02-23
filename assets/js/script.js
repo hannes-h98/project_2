@@ -43,10 +43,23 @@ const QUESTIONS = [
 ]
 
 // Get DOM elements by using query selector
-const quizArea = document.queryselector(".quiz-game-area")
-const choices = document.queryselector(".choices")
-const questionElement = document.queryselector(".questions-text")
-const nextQ = document.queryselector(".next-q")
-const ScoreArea = document.queryselector(".score-Area")
-const finalResult = document.queryselector(".final-result")
-const restartBtn = document.queryselector(".restart")
+const quizArea = document.querySelector(".quiz-game-area")
+const choices = document.querySelector(".choices")
+const questionElement = document.querySelector(".questions-text")
+const nextQ = document.querySelector(".next-q")
+const scoreArea = document.querySelector(".score-Area")
+const finalResult = document.querySelector(".final-result")
+const restartBtn = document.querySelector(".restart")
+
+
+// track score and current question
+let score = 0
+let currentQuestion = 0
+
+// Event listeners
+nextQ.addEventListener("click", nextQuestion);
+restartBtn.addEventListener("click", restartGame);
+
+
+
+
