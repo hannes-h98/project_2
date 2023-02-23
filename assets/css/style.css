@@ -9,5 +9,27 @@
 body {
     font-family: Oswald, sans-serif;
     background-color: #9c9c9c;
+    font-size: 20px;
+}
 
+.quiz-game-area {
+    position: absolute;
+    background-color: aqua;
+    top: 50%;
+    left: 42%;
+    z-index: 1;
+}
+
+.score-area {
+    position: absolute;
+    background-color: aqua;
+    top: 50%;
+    left: 42%;
+}
+
+footer {
+    position: fixed;
+    top: 70%;
+    margin-left: 42%;
+    
 }
