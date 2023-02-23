@@ -1,3 +1,5 @@
+/* Google font */
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 * {
@@ -11,6 +13,8 @@ body {
     background-color: #9c9c9c;
     font-size: 20px;
 }
+
+/* Game area */
 
 .quiz-game-area {
     position: absolute;
@@ -26,19 +30,24 @@ body {
 .next-q {
     position: absolute;
     bottom: 0;
-    left: 35%;
+    left: 30%;
     margin-bottom: 5px;
-    font-size: 15px;
+    font-size: 20px;
 }
+
+/* Score area */
 
 .score-area {
     position: absolute;
     background-color: #6900ff;
-    top: 40%;
+    top: 30%;
     left: 42%;
-    height: 20vh;
+    height: 35vh;
     border: 2px solid;
+    padding: 3px 3px 3px 3px;
 }
+
+/* Footer Area */
 
 footer {
     position: fixed;
