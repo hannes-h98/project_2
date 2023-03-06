@@ -102,7 +102,7 @@ currentQuestion++;
 // This statement checks if all questions has been answered and then displays the final score in the score area
 if (currentQuestion >= QUESTIONS.length) {
     quizArea.style.display = "none";
-    ScoreArea.style.display = "block";
+    scoreArea.style.display = "block";
     finalResult.textContent = `You got ${score} out of ${QUESTIONS.length * 100} Points!`;
 } 
 else {
