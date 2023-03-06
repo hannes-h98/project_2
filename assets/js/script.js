@@ -42,24 +42,11 @@ const QUESTIONS = [
 }
 ]
 
-// Get DOM elements by using query selector
-const quizArea = document.querySelector(".quiz-game-area")
-const choices = document.querySelector(".choices")
-const questionElement = document.querySelector(".questions-text")
-const nextQ = document.querySelector(".next-q")
-const scoreArea = document.querySelector(".score-Area")
-const finalResult = document.querySelector(".final-result")
-const restartBtn = document.querySelector(".restart")
-
-
-// track score and current question
-let score = 0
-let currentQuestion = 0
-
-// Event listeners
-nextQ.addEventListener("click", nextQuestion);
-restartBtn.addEventListener("click", restartGame);
-
-
-
-
+// Get DOM elements by using class name selector 
+const quizArea = document.getElementsByClassName("quiz-game-area")[0];
+const choices = document.getElementsByClassName("choices")[0];
+const questionElement = document.getElementsByClassName("questions-text")[0];
+const nextQ = document.getElementsByClassName("next-q")[0];
+const scoreArea = document.getElementsByClassName("score-area")[0];
+const finalResult = document.getElementsByClassName("final-result")[0];
+const restartBtn = document.getElementsByClassName("restart")[0];
