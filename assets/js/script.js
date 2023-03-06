@@ -50,3 +50,5 @@ const nextQ = document.getElementsByClassName("next-q")[0];
 const scoreArea = document.getElementsByClassName("score-area")[0];
 const finalResult = document.getElementsByClassName("final-result")[0];
 const restartBtn = document.getElementsByClassName("restart")[0];
+
+
