@@ -53,6 +53,7 @@ const restartBtn = document.getElementsByClassName("restart")[0];
 
 // Event listeners for the buttons
 nextQ.addEventListener("click", nextQuestion)
+restartBtn.addEventListener("click", restartQuiz)
 
 // Track current question and score
 let currentQuestion = 0;
@@ -62,7 +63,7 @@ let score = 0;
 getQuestion();
 
 /* Function to show the first question from the array, update the question-text div 
-* with the text content of the first question
+* with the text content of the first question and clear the answer choices so it doesnt overlapp with the next question and answers.
 */
 
 function getQuestion () {
@@ -109,4 +110,9 @@ else {
 }
 }
 
-
+function restartQuiz() {
+    score = 0
+    currentQuestion = 0
+    quizArea.style.display ="block";
+    scoreArea.style.display ="none";
+}
