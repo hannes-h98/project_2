@@ -55,6 +55,7 @@ const restartBtn = document.getElementsByClassName("restart")[0];
 let currentQuestion = 0;
 let score = 0;
 
+// Call the getQuestion function
 getQuestion();
 
 /* Function to show the first question from the array, update the question-text div 
@@ -66,18 +67,40 @@ function getQuestion () {
     questionElement.textContent = question.question;
 
 // A for loop to the answers and create radio buttons with labels for each answer
-    for (const [key, value] of object.entries(question.answers)) {
+    for (const [key, value] of Object.entries(question.answers)) {
         const input = document.createElement("input");
         input.type = "radio";
         input.name = "answer";
         input.value = key;
         const label = document.createElement("label");
-        label.textcontent = value;
+        label.textContent = value;
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild        
         choices.appendChild(input);
         choices.appendChild(label);
         choices.appendChild(document.createElement("br"));
     }
-
 }
+
+function nextQuestion () {
+    const selectedAnswer = document.querySelector("input[name='answer']:checked");
+    if (!selectedAnswer) {
+        return;
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return        
+    }
+if (selectedAnswer.value === QUESTIONS[currentQuestion].rightanswer) {
+    score += 100;
+}
+
+currentQuestion++;
+
+if (currentQuestion >= QUESTIONS.length) {
+    quizArea.style.display = "none";
+    ScoreArea.style.display = "block";
+    finalResult.textContent = `You got ${score} out of ${QUESTIONS.length * 100} Points!`;
+} 
+else {
+    getQuestion();
+}
+}
+
