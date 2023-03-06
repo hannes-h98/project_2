@@ -71,14 +71,16 @@ function getQuestion () {
     questionElement.textContent = question.question;
     choices.innerHTML = "";
 
-// A for loop to the answers and create radio buttons with labels for each answer
+// A for loop to the answers and create radio buttons with labels for each answer using the inputs id and value.
     for (const [key, value] of Object.entries(question.answers)) {
         const input = document.createElement("input");
         input.type = "radio";
         input.name = "answer";
         input.value = key;
+        input.id = `answer-${key}`;
         const label = document.createElement("label");
-        label.textContent = value;
+        label.textContent = value
+        label.setAttribute("for", `answer-${key}`)
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild        
         choices.appendChild(input);
