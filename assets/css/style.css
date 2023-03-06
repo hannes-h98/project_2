@@ -65,7 +65,7 @@ footer {
 
 /* Media queries */
 
-@media screen and (max-height: 1000px) {
+@media screen and (max-height: 920px) {
     body {
         font-size: smaller;
     }
@@ -77,4 +77,11 @@ footer {
     footer {
         top: 60%
     }
+}
+
+@media screen and (min-width: 1430px) {
+    body {
+        font-size: 25px;
+    }
+
 }
