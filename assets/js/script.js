@@ -40,7 +40,7 @@ const QUESTIONS = [
     },
     rightanswer: "c"
 }
-]
+];
 
 // Get DOM elements by using class name selector 
 const quizArea = document.getElementsByClassName("quiz-game-area")[0];
@@ -52,8 +52,8 @@ const finalResult = document.getElementsByClassName("final-result")[0];
 const restartBtn = document.getElementsByClassName("restart")[0];
 
 // Event listeners for the buttons
-nextQ.addEventListener("click", nextQuestion)
-restartBtn.addEventListener("click", restartQuiz)
+nextQ.addEventListener("click", nextQuestion);
+restartBtn.addEventListener("click", restartQuiz);
 
 // Track current question and score
 let currentQuestion = 0;
@@ -112,8 +112,8 @@ else {
 
 // Function to restart the quiz by setting score and current question to 0 and hide the score area
 function restartQuiz() {
-    score = 0
-    currentQuestion = 0
+    score = 0;
+    currentQuestion = 0;
     quizArea.style.display ="block";
     scoreArea.style.display ="none";
 }

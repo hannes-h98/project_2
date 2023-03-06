@@ -62,3 +62,19 @@ footer {
     top: 70%;
     margin-left: 42%;
 }
+
+/* Media queries */
+
+@media screen and (max-height: 1000px) {
+    body {
+        font-size: smaller;
+    }
+
+    .quiz-game-area, .score-area {
+        top: 20%
+    }
+
+    footer {
+        top: 60%
+    }
+}
