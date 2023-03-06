@@ -68,6 +68,7 @@ getQuestion();
 function getQuestion () {
     const question = QUESTIONS[currentQuestion];
     questionElement.textContent = question.question;
+    choices.innerHTML = "";
 
 // A for loop to the answers and create radio buttons with labels for each answer
     for (const [key, value] of Object.entries(question.answers)) {
