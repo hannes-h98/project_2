@@ -110,6 +110,7 @@ else {
 }
 }
 
+// Function to restart the quiz by setting score and current question to 0 and hide the score area
 function restartQuiz() {
     score = 0
     currentQuestion = 0
