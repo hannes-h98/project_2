@@ -51,6 +51,9 @@ const scoreArea = document.getElementsByClassName("score-area")[0];
 const finalResult = document.getElementsByClassName("final-result")[0];
 const restartBtn = document.getElementsByClassName("restart")[0];
 
+// Event listeners for the buttons
+nextQ.addEventListener("click", nextQuestion)
+
 // Track current question and score
 let currentQuestion = 0;
 let score = 0;
@@ -82,6 +85,7 @@ function getQuestion () {
     }
 }
 
+// Function to get the selected answer using a query selector, if no answer is selected you can not continue
 function nextQuestion () {
     const selectedAnswer = document.querySelector("input[name='answer']:checked");
     if (!selectedAnswer) {
@@ -93,7 +97,7 @@ if (selectedAnswer.value === QUESTIONS[currentQuestion].rightanswer) {
 }
 
 currentQuestion++;
-
+// This statement checks if all questions has been answered and then displays the final score in the score area
 if (currentQuestion >= QUESTIONS.length) {
     quizArea.style.display = "none";
     ScoreArea.style.display = "block";
@@ -103,4 +107,5 @@ else {
     getQuestion();
 }
 }
+
 
