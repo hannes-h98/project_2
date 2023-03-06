@@ -18,7 +18,7 @@ body {
 
 .quiz-game-area {
     position: absolute;
-    background-color: #6900ff;
+    background-color: #00ffee;
     top: 30%;
     left: 42%;
     z-index: 1;
@@ -39,7 +39,7 @@ body {
 
 .score-area {
     position: absolute;
-    background-color: #6900ff;
+    background-color: #00ffee;
     top: 30%;
     left: 42%;
     height: 35vh;
