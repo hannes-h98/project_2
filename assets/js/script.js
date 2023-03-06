@@ -71,7 +71,9 @@ function getQuestion () {
     questionElement.textContent = question.question;
     choices.innerHTML = "";
 
-// A for loop to the answers and create radio buttons with labels for each answer using the inputs id and value.
+/* A for loop to the answers and create radio buttons with labels for each answer using the inputs id and value.
+* https://stackoverflow.com/questions/1950939/creating-input-field-for-html-form-but-adding-a-label-for-it-as-well
+*/
     for (const [key, value] of Object.entries(question.answers)) {
         const input = document.createElement("input");
         input.type = "radio";
