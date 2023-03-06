@@ -51,4 +51,15 @@ const scoreArea = document.getElementsByClassName("score-area")[0];
 const finalResult = document.getElementsByClassName("final-result")[0];
 const restartBtn = document.getElementsByClassName("restart")[0];
 
+// Track current question and score
+let currentQuestion = 0;
+let score = 0;
 
+getQuestion();
+
+function getQuestion () {
+    const question = QUESTIONS[currentQuestion];
+    questionElement.textContent = question.question;
+    choices.innerHTML = "";
+
+}
